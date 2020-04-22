@@ -9,7 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <ListView HorizontalAlignment="Left" Height="260" Margin="60,334,0,0" VerticalAlignment="Top" Width="174"/>
-
+        <ListView ItemsSource="{x:Bind OC_list_Students}"
+            HorizontalAlignment="Left" Height="260" Margin="60,334,0,0"
+            VerticalAlignment="Top" Width="174">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local:Student">
+                    <TextBox Text="{x:Bind Navn, Mode=TwoWay}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>
