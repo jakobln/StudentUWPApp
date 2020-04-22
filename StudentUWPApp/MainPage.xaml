@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <ListView HorizontalAlignment="Left" Height="260" Margin="60,334,0,0" VerticalAlignment="Top" Width="174"/>
 
     </Grid>
 </Page>

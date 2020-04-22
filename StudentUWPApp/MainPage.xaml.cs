@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -27,11 +28,11 @@ namespace StudentUWPApp
             this.InitializeComponent();
         }
         
-        public ObservableCollection<OC_list_Students> Student
+        public ObservableCollection<Student> OC_list_Students
         {
             get
             {
-                return new ObservableCollection<OC_list_Students>()
+                return new ObservableCollection<Student>()
                 {
                     new Student() { Navn = "Dennis" },
                     new Student() { Navn = "Jens" },
