@@ -26,5 +26,20 @@ namespace StudentUWPApp
         {
             this.InitializeComponent();
         }
+        
+        public ObservableCollection<OC_list_Students> Student
+        {
+            get
+            {
+                return new ObservableCollection<OC_list_Students>()
+                {
+                    new Student() { Navn = "Dennis" },
+                    new Student() { Navn = "Jens" },
+                    new Student() { Navn = "Peter" },
+                    new Student() { Navn = "John" },
+                    new Student() { Navn = "Julie" }
+                };
+            }
+        }
     }
 }
